@@ -1,0 +1,32 @@
+import type { SVGProps } from 'react';
+
+const HomeIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="16"
+    height="18"
+    viewBox="0 0 16 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <mask
+      id="mask0_40000032_1691"
+      style={{ maskType: 'alpha' }}
+      maskUnits="userSpaceOnUse"
+      x="-4"
+      y="-3"
+      width="24"
+      height="24"
+    >
+      <rect x="-4" y="-3" width="24" height="24" fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_40000032_1691)">
+      <path
+        d="M2 16H5V10H11V16H14V7L8 2.5L2 7V16ZM0 18V6L8 0L16 6V18H9V12H7V18H0Z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+);
+
+export default HomeIcon;
