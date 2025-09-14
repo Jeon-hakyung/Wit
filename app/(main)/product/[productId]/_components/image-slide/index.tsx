@@ -1,7 +1,7 @@
 'use client';
 
 import { useSwipe } from '@/hooks/useSwipe';
-import { cn } from '@/utils';
+import { cn, getS3ImageUrl } from '@/utils';
 import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import CircularIndicator from './slide-indicator';
@@ -149,7 +149,7 @@ const ProductImageSlider = ({
               className="relative h-full min-w-full flex-shrink-0"
             >
               <Image
-                src={image.url}
+                src={getS3ImageUrl(image.url)}
                 alt={`${productName} 이미지 ${index > 0 && index <= slideCount ? index : ''}`}
                 fill
                 draggable={false}

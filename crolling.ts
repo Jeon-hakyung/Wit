@@ -1,4 +1,6 @@
 import puppeteer from "puppeteer";
+import type { Page } from "puppeteer";
+
 
 async function crawlProducts() {
   const browser = await puppeteer.launch({ headless: true });
@@ -32,7 +34,7 @@ async function crawlProducts() {
   await browser.close();
 }
 
-async function autoScroll(page: puppeteer.Page) {
+async function autoScroll(page: Page) {
   await page.evaluate(async () => {
     await new Promise<void>((resolve) => {
       let totalHeight = 0;

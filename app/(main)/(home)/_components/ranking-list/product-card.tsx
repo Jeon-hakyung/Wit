@@ -10,7 +10,7 @@ import { useState, useTransition } from 'react';
 interface ProductCardProps {
   id: string;
   rank: number;
-  imageUrl: string;
+   imageUrl: string;
   category: string;
   title: string;
   price: number;
